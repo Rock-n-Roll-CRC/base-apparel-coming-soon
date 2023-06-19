@@ -1,0 +1,31 @@
+/* GENERAL */
+:root {
+  /* primary colors */
+  --primary-color-desaturated-red: #ce9797;
+  --primary-color-soft-red: #f96262;
+
+  /* netural colors */
+  --netural-color-dark-grayish-red: #413a3a;
+
+  /* gradient colors */
+  --gradient-color-white: linear-gradient(135deg, #fff 0%, #fff5f5 100%);
+  --gradient-color-red: linear-gradient(135deg, #f8bfbf 0%, #ee8c8c 100%);
+}
+
+body {
+  background: var(--gradient-color-white);
+  font: 400 1rem "Josefin Sans", sans-serif;
+}
+
+.visually-hidden:not(:focus, :active) {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* MAIN */
