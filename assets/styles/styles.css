@@ -28,4 +28,52 @@ body {
   width: 1px;
 }
 
+/* HEADER */
+header {
+  margin-bottom: 1.95rem;
+}
+
+.header-logo {
+  max-width: 6.45rem;
+  margin: 1.95rem 0 0 1.95rem;
+}
+
 /* MAIN */
+
+/* Picture Box */
+.main-picture {
+  height: 15.6rem;
+  background: url("../images/hero-mobile.jpg") center/cover no-repeat;
+  margin-bottom: 4.1rem;
+}
+
+/* Email Subscription Box */
+.main-email-subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.email-subscription-heading {
+  max-width: 15rem;
+  color: var(--primary-color-desaturated-red);
+  font: 300 2.62rem "Josefin Sans", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+
+.email-subscription-heading span {
+  color: var(--netural-color-dark-grayish-red);
+  font: 600 2.5rem "Josefin Sans", sans-serif;
+  letter-spacing: 0.7rem;
+}
+
+.email-subscription-greeting {
+  max-width: 20rem;
+  color: var(--primary-color-desaturated-red);
+  font: 400 0.9rem "Josefin Sans", sans-serif;
+  text-align: center;
+  line-height: 1.5;
+}
