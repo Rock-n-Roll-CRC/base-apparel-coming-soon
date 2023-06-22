@@ -1,4 +1,5 @@
 /* GENERAL */
+
 :root {
   /* primary colors */
   --primary-color-desaturated-red: #ce9797;
@@ -15,6 +16,7 @@
 body {
   background: var(--gradient-color-white);
   font: 400 1rem "Josefin Sans", sans-serif;
+  padding-bottom: 2rem;
 }
 
 .visually-hidden:not(:focus, :active) {
@@ -29,6 +31,7 @@ body {
 }
 
 /* HEADER */
+
 header {
   margin-bottom: 1.95rem;
 }
@@ -40,14 +43,14 @@ header {
 
 /* MAIN */
 
-/* Picture Box */
+/* |Picture Box| */
 .main-picture {
   height: 15.6rem;
   background: url("../images/hero-mobile.jpg") center/cover no-repeat;
   margin-bottom: 4.1rem;
 }
 
-/* Email Subscription Box */
+/* |Email Subscription Box| */
 .main-email-subscription {
   display: flex;
   flex-direction: column;
@@ -56,6 +59,7 @@ header {
   padding: 0 2rem;
 }
 
+/* Heading */
 .email-subscription-heading {
   max-width: 15rem;
   color: var(--primary-color-desaturated-red);
@@ -71,6 +75,7 @@ header {
   letter-spacing: 0.7rem;
 }
 
+/* Greeting */
 .email-subscription-greeting {
   max-width: 20rem;
   color: var(--primary-color-desaturated-red);
@@ -80,7 +85,10 @@ header {
   margin-bottom: 0.8rem;
 }
 
-.email-subscription-form {
+/* Form */
+
+/* input box */
+.form-input-box {
   position: relative;
 }
 
@@ -89,6 +97,7 @@ header {
   border: 1px solid var(--primary-color-desaturated-red);
   border-radius: 25px;
   padding: 0.95rem 1.45rem;
+  outline: 0;
 }
 
 .email-subscription-input::placeholder {
@@ -96,8 +105,14 @@ header {
   font: 400 0.85rem "Josefin Sans", sans-serif;
 }
 
-.email-subscription-input:focus {
-  outline: 0;
+.email-subscription-input.validation-complete {
+  border: 2px solid var(--primary-color-soft-red);
+}
+
+.validation-message-circle {
+  position: absolute;
+  inset: 0 70px 0 200px;
+  background: url("../images/icon-error.svg") center / 45% no-repeat;
 }
 
 .email-subscription-submit {
@@ -108,4 +123,17 @@ header {
   border: 0;
   border-radius: 500px;
   cursor: pointer;
+}
+
+.email-subscription-submit:hover {
+  opacity: 0.7;
+  box-shadow: 0 5px 10px #00000060;
+}
+
+/* validation message */
+.validation-message {
+  color: var(--primary-color-soft-red);
+  font: 400 0.85rem "Josefin Sans", sans-serif;
+  padding-left: 1.55rem;
+  margin-top: 0.7rem;
 }

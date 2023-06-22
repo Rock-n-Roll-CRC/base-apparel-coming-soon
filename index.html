@@ -38,7 +38,9 @@
   </head>
   <body>
     <header>
+      <!-- Heading -->
       <h1 class="visually-hidden">Base Apparel coming soon page</h1>
+      <!-- Icon -->
       <img
         src="./assets/images/logo.svg"
         alt="Base Apparel"
@@ -47,26 +49,36 @@
     </header>
 
     <main>
-      <!-- Picture Box -->
+      <!-- |Picture Box| -->
       <div class="main-picture"></div>
 
-      <!-- Email Subscription Box  -->
+      <!-- |Email Subscription Box|  -->
       <div class="main-email-subscription">
+        <!-- Heading -->
         <h2 class="email-subscription-heading">
           We're <span>coming soon</span>
         </h2>
+        <!-- Greeting -->
         <p class="email-subscription-greeting">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
+        <!-- Form -->
         <form class="email-subscription-form">
-          <input
-            type="email"
-            class="email-subscription-input"
-            placeholder="Email Address"
-          />
-          <button class="email-subscription-submit"></button>
+          <!-- input box -->
+          <div class="form-input-box">
+            <input
+              type="email"
+              class="email-subscription-input"
+              placeholder="Email Address"
+            />
+            <div class="validation-message-circle"></div>
+            <button class="email-subscription-submit"></button>
+          </div>
+
+          <!-- validation message -->
+          <p class="validation-message">Please provide a valid email</p>
         </form>
       </div>
     </main>
