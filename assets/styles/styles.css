@@ -107,12 +107,18 @@ header {
 
 .email-subscription-input.validation-complete {
   border: 2px solid var(--primary-color-soft-red);
+  padding: 0.887rem 1.387rem;
 }
 
 .validation-message-circle {
+  display: none;
   position: absolute;
   inset: 0 70px 0 200px;
   background: url("../images/icon-error.svg") center / 45% no-repeat;
+}
+
+.validation-message-circle.validation-complete {
+  display: block;
 }
 
 .email-subscription-submit {
@@ -132,8 +138,13 @@ header {
 
 /* validation message */
 .validation-message {
+  display: none;
   color: var(--primary-color-soft-red);
   font: 400 0.85rem "Josefin Sans", sans-serif;
   padding-left: 1.55rem;
   margin-top: 0.7rem;
+}
+
+.validation-message.validation-complete {
+  display: block;
 }
