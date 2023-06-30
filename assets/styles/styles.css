@@ -1,4 +1,4 @@
-/* GENERAL */
+/* ! GENERAL ! */
 
 :root {
   /* primary colors */
@@ -30,7 +30,7 @@ body {
   width: 1px;
 }
 
-/* HEADER */
+/* ! HEADER ! */
 
 header {
   margin-bottom: 1.95rem;
@@ -41,7 +41,7 @@ header {
   margin: 1.95rem 0 0 1.95rem;
 }
 
-/* MAIN */
+/* ! MAIN ! */
 
 /* |Picture Box| */
 .main-picture {
@@ -147,4 +147,24 @@ header {
 
 .validation-message.validation-complete {
   display: block;
+}
+
+/* ! DESKTOP SCREENS ! */
+@media all and (width >= 64rem) {
+  body {
+    padding: 0;
+  }
+
+  main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-picture {
+    height: 50rem;
+    width: 50%;
+    background: url("../images/hero-desktop.jpg") center/cover no-repeat;
+    margin-bottom: 0;
+    order: 1;
+  }
 }

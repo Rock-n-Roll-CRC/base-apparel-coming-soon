@@ -1,3 +1,5 @@
+// |EMAIL PARSING|
+// VARIABLES
 const emailSubscriptionSubmit: HTMLButtonElement | null =
   document.querySelector(".email-subscription-submit");
 
@@ -11,22 +13,30 @@ const validationMessage: HTMLParagraphElement | null = document.querySelector(
   ".validation-message"
 );
 
+// FUNCTIONS
+const emailValidated = function (): void {
+  emailSubscriptionInput?.classList.add("validation-complete");
+  validationCircle?.classList.add("validation-complete");
+  validationMessage?.classList.add("validation-complete");
+};
+
+const emailInvalidated = function (): void {
+  emailSubscriptionInput?.classList.remove("validation-complete");
+  validationCircle?.classList.remove("validation-complete");
+  validationMessage?.classList.remove("validation-complete");
+};
+
+// EMAIL PARSING
 emailSubscriptionSubmit?.addEventListener("click", () => {
   if (
-    emailSubscriptionInput?.value === "" ||
-    emailSubscriptionInput?.value.includes("@") === false
+    emailSubscriptionInput?.value.includes("@") === false ||
+    emailSubscriptionInput?.value.indexOf("@") === 0 ||
+    emailSubscriptionInput?.value.indexOf("@") !==
+      emailSubscriptionInput?.value.lastIndexOf("@") ||
+    emailSubscriptionInput?.value.includes(".") === false
   ) {
-    emailSubscriptionInput?.classList.add("validation-complete");
-    validationCircle?.classList.add("validation-complete");
-    validationMessage?.classList.add("validation-complete");
-  }
-
-  if (
-    emailSubscriptionInput?.value !== "" &&
-    emailSubscriptionInput?.value.includes("@") === true
-  ) {
-    emailSubscriptionInput?.classList.remove("validation-complete");
-    validationCircle?.classList.remove("validation-complete");
-    validationMessage?.classList.remove("validation-complete");
+    emailValidated();
+  } else {
+    emailInvalidated();
   }
 });
