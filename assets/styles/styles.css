@@ -151,8 +151,15 @@ header {
 
 /* ! DESKTOP SCREENS ! */
 @media all and (width >= 64rem) {
+  html {
+    background: url("../images/bg-pattern-desktop.svg") no-repeat;
+    overflow: hidden;
+  }
+
   body {
+    background: none;
     padding: 0;
+    padding-right: 35%;
   }
 
   main {
@@ -160,11 +167,94 @@ header {
     justify-content: space-between;
   }
 
+  header {
+    margin-top: 4.05rem;
+    margin-bottom: 8.5rem;
+  }
+
+  .header-logo {
+    max-width: 10rem;
+    margin-left: 10.3rem;
+  }
+
   .main-picture {
+    position: absolute;
+    top: 0;
+    right: 0;
     height: 50rem;
-    width: 50%;
+    width: 42.35%;
     background: url("../images/hero-desktop.jpg") center/cover no-repeat;
     margin-bottom: 0;
     order: 1;
+  }
+
+  .main-email-subscription {
+    display: block;
+    max-width: 48.5rem;
+    padding: 0 10.3rem;
+  }
+
+  .email-subscription-heading {
+    width: 100%;
+    max-width: none;
+    font: 300 3.92rem "Josefin Sans", sans-serif;
+    text-align: start;
+    letter-spacing: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .email-subscription-heading span {
+    display: inline-block;
+    font: 600 4rem "Josefin Sans", sans-serif;
+    letter-spacing: 1.08rem;
+    margin-top: 0.05rem;
+    line-height: 1.11;
+  }
+
+  .email-subscription-greeting {
+    width: 100%;
+    max-width: none;
+    font: 400 1.01rem "Josefin Sans", sans-serif;
+    text-align: start;
+    line-height: 1.7;
+    margin-bottom: 2.55rem;
+  }
+
+  .email-subscription-input {
+    width: 100%;
+    max-width: none;
+    border-radius: 38px;
+    padding: 1.18rem 1.95rem;
+  }
+
+  .email-subscription-input.validation-complete {
+    padding: 1.13rem 1.887rem;
+  }
+
+  .email-subscription-input::placeholder {
+    font: 400 0.9rem "Josefin Sans", sans-serif;
+    letter-spacing: 0.05rem;
+  }
+
+  .email-subscription-submit {
+    inset: 0 0 0 77.5%;
+    background: url("../images/icon-arrow.svg") center / 0.7rem no-repeat,
+      var(--gradient-color-red);
+  }
+
+  .validation-message-circle {
+    inset: 0 10% 0 68.4%;
+    background: url("../images/icon-error.svg") left / 1.5rem no-repeat;
+  }
+
+  .validation-message {
+    font: 400 0.8rem "Josefin Sans", sans-serif;
+    padding-left: 2rem;
+  }
+}
+
+@media all and (width > 90rem) {
+  html {
+    background: var(--gradient-color-white);
   }
 }
