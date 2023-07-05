@@ -1,4 +1,3 @@
-// |EMAIL PARSING|
 // VARIABLES
 const emailSubscriptionSubmit: HTMLButtonElement | null =
   document.querySelector(".email-subscription-submit");

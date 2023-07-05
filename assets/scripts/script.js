@@ -1,5 +1,4 @@
 "use strict";
-// |EMAIL PARSING|
 // VARIABLES
 const emailSubscriptionSubmit = document.querySelector(".email-subscription-submit");
 const emailSubscriptionInput = document.querySelector(".email-subscription-input");
