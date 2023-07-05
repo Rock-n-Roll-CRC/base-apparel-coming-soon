@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-l3ou1965rP](https://www.frontendmentor.io/solutions/base-apparel-coming-soon-page-l3ou1965rP)
 - Live Site URL: [https://rock-n-roll-crc.github.io/base-apparel-coming-soon/](https://rock-n-roll-crc.github.io/base-apparel-coming-soon/)
 
 ## My process
